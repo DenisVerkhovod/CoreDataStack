@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 /// Configure in-memory `NSPersistentStoreDescription` which is appropriate to use it in tests.
 struct TestEnvironmentPersistentStoreDescriptionConfigurator: PersistentStoreDescriptionConfigurator {
@@ -13,6 +14,7 @@ struct TestEnvironmentPersistentStoreDescriptionConfigurator: PersistentStoreDes
     // MARK: - Methods
     
     func configure(_ description: NSPersistentStoreDescription) throws {
+        description.type = NSInMemoryStoreType
         description.url = URL(fileURLWithPath: "/dev/null")
     }
     

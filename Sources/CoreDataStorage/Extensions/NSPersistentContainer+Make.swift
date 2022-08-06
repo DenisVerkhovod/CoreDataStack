@@ -26,4 +26,8 @@ extension NSPersistentContainer {
         return persistentContainer
     }
     
+    var isInMemory: Bool {
+        persistentStoreDescriptions.contains { $0.type == NSInMemoryStoreType }
+    }
+    
 }
