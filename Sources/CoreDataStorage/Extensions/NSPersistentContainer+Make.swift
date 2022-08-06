@@ -11,7 +11,7 @@ extension NSPersistentContainer {
 
     static func makePersistentContainer<Container: NSPersistentContainer>(
         named name: String,
-        for model: NSManagedObjectModel,
+        forModel model: NSManagedObjectModel,
         configurator: PersistentStoreDescriptionConfigurator
     ) throws -> Container {
         let persistentContainer = Container(name: name, managedObjectModel: model)
@@ -22,7 +22,6 @@ extension NSPersistentContainer {
         persistentContainer.persistentStoreDescriptions = [
             description
         ]
-
         return persistentContainer
     }
     
