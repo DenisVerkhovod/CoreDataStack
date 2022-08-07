@@ -7,7 +7,7 @@
 
 import CoreData
 
-protocol PersistentStoreDescriptionConfigurator {
+public protocol PersistentStoreDescriptionConfigurator {
 
     func configure(_ description: NSPersistentStoreDescription) throws
     

@@ -7,12 +7,12 @@
 
 import CoreData
 
-enum NSManagedObjectInstantiatingError: Error {
+public enum NSManagedObjectInstantiatingError: Error {
     case creationError
     case noModels
 }
 
-extension NSManagedObjectModel {
+public extension NSManagedObjectModel {
     
     static func make(name: String, bundle: Bundle) throws -> NSManagedObjectModel {
         guard let url = bundle.url(forResource: name, withExtension: "momd") else {

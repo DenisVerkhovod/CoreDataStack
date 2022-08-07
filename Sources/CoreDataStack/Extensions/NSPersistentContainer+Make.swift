@@ -7,7 +7,7 @@
 
 import CoreData
 
-extension NSPersistentContainer {
+public extension NSPersistentContainer {
 
     static func makePersistentContainer<Container: NSPersistentContainer>(
         named name: String,

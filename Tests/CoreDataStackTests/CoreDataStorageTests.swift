@@ -1,4 +1,4 @@
 import XCTest
-@testable import CoreDataStorage
+@testable import CoreDataStack
 
 final class CoreDataStorageTests: XCTestCase {}

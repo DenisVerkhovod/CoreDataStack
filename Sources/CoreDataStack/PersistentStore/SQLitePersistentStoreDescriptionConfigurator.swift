@@ -7,7 +7,7 @@
 
 import CoreData
 
-struct SQLitePersistentStoreDescriptionConfigurator: PersistentStoreDescriptionConfigurator {
+public struct SQLitePersistentStoreDescriptionConfigurator: PersistentStoreDescriptionConfigurator {
     
     // MARK: - Properties
 
@@ -46,7 +46,7 @@ struct SQLitePersistentStoreDescriptionConfigurator: PersistentStoreDescriptionC
     
     // MARK: - Methods
 
-    func configure(_ description: NSPersistentStoreDescription) throws {
+    public func configure(_ description: NSPersistentStoreDescription) throws {
         description.type = NSSQLiteStoreType
 
         description.shouldInferMappingModelAutomatically = shouldInferMappingModelAutomatically
