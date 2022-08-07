@@ -12,9 +12,9 @@ public final class Stack {
     
     // MARK: - Properties
     
-    let mainContext: NSManagedObjectContext
-    let readContext: NSManagedObjectContext
-    let writeContext: NSManagedObjectContext
+    public let mainContext: NSManagedObjectContext
+    public let readContext: NSManagedObjectContext
+    public let writeContext: NSManagedObjectContext
     
     private let persistentContainer: NSPersistentContainer
       
